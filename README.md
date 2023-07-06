@@ -1,14 +1,10 @@
-## Chapter I  
-
 ## Introduction
 
-In this project you will develop your own version of the standard math.h library in the C programming language. This library implements basic mathematical operations, which are then used in various algorithms. As part of the project you will learn the basics of computational methods and solidify knowledge of structured programming.
-
-## Chapter II
+In this project, we have developed our own version of the standard math.h library in the C programming language. The math.h library provides various mathematical functions that are commonly used in algorithms and computations. By implementing this library, we aimed to gain a deeper understanding of computational methods and solidify our knowledge of structured programming.
 
 ## Information
 
-C mathematical operations are a group of functions in the standard library of the C programming language implementing basic mathematical functions. All functions use floating-point numbers in one manner or another. Different C standards provide different, albeit backwards-compatible, sets of functions. Any functions that operate on angles use radians as the unit of angle.
+The C mathematical operations functions are a group of functions in the standard library of the C programming language that implement basic mathematical operations. These functions work with floating-point numbers and provide various mathematical calculations. It's important to note that the functions operating on angles use radians as the unit of angle measurement.
 
 ### Overview of some "math.h" functions
 
@@ -30,9 +26,6 @@ C mathematical operations are a group of functions in the standard library of th
 | 14 | `long double sqrt(double x)` | computes square root |
 | 15 | `long double tan(double x)` | computes tangent |  
 
-
-## Chapter III
-
 ## Part 1. Implementing the math.h library functions
 
 The functions of the math.h library must be implemented (only those directly described [above](#overview-of-some-mathh-functions)):
@@ -41,15 +34,17 @@ The functions of the math.h library must be implemented (only those directly des
 - The library code must be located in the src folder on the develop branch
 - Do not use outdated and legacy language constructions and library functions. Pay attention to the legacy and obsolete marks in the official documentation on the language and the libraries used. Use the POSIX.1-2017 standard.
 - When writing code it is necessary to follow the Google style
-- Make it as a static library (with the s21_math.h header file)
+- Make it as a static library
 - The library must be developed according to the principles of structured programming; code duplication must be avoided
-- Use prefix s21_ before each function
 - Prepare full coverage of library functions code with unit-tests with the Check library  
 - Unit-tests must check the results of your implementation by comparing them with the implementation of the standard math.h library
 - Unit tests must cover at least 80% of each function (checked using gcov)
-- Provide a Makefile for building the library and tests (with the targets all, clean, test, s21_math.a, gcov_report)
+- Provide a Makefile for building the library and tests (with the targets all, clean, test, gcov_report)
 - The gcov_report target should generate a gcov report in the form of an html page. Unit tests must be run with gcov flags to do this  
 - It is forbidden to copy the implementation of the standard math.h library and to use it anywhere, except unit-tests
 - You must follow the logic of the standard library (in terms of checks, working with memory and behavior in emergency situations - tests will help you with that)
 - The total verifiable accuracy is 16 significant digits
 - Verifiable accuracy of the fractional part is up to 6 decimal places.
+
+## Conclusion
+By completing this project and implementing our own version of the math.h library in C, we have gained valuable insights into computational methods and solidified our understanding of structured programming. The implementation of essential mathematical functions allows us to perform various calculations and use them in algorithms and computations.
